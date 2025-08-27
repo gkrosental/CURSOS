@@ -1,0 +1,16 @@
+Instructions on Setting Up Database:
+Windows: https://docs.google.com/document/d/1MuRT74EQcGpNJJS3sneXnNOSOm7uZoZQA02480NF0QQ/edit?usp=sharing
+
+Mac:
+https://docs.google.com/document/d/1wFKq4cWln2z84Co-LN4INn6ltN3BPdRNEHWGhRj3GBM/edit?usp=sharing
+
+
+Slides for the first 30 minutes session (Database 101):
+https://docs.google.com/presentation/d/1BLAJnGAgItESljxesxHpg96vK5mMU7XSBGYwEYHPPOU/edit?usp=sharing
+
+ 
+
+For the second 1 hour session (Introduction to SQL), I have prepared some exercises and a sample dataset:
+Exercise: https://docs.google.com/document/d/19anNdj-t6rs6bRdFHviamWrxbvz0-vlUL-w0TmcIesA/edit?usp=sharing
+
+IMDb Dataset: https://drive.google.com/file/d/1NoL4illLTXcGgkAcn4oTQ_d0WmKqBDXO/view?usp=sharing

@@ -1,0 +1,125 @@
+<article>
+ <div class="article-paragraph">
+  Comece criando o arquivo HTML da aula:
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="styles.css" rel="stylesheet">
+    <title>Seletores Básicos do CSS</title>
+</link></meta></meta></head>
+
+<body>
+    <header>
+        <h1>Seletores Básicos do CSS</h1>
+    </header>
+
+    <nav>
+        <a href="#">LOGO</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="secao-principal">
+        <h2>Exemplos de Seletores</h2>
+        <p>Este parágrafo não está utilizando um seletor de classe.</p>
+        <p class="laranja">
+            Este parágrafo está utilizando um seletor de classe.
+        </p>
+        <p class="verde">Este parágrafo está utilizando um seletor de classe.</p>
+    </section>
+
+    <section>
+        <form>
+            <input name="email" type="text">
+            <input name="password" type="password"/>
+        </input></form>
+    </section>
+
+    <footer>
+        <p>OneBitCode © 2023</p>
+    </footer>
+</body>
+
+</html></textarea>
+ <div class="article-paragraph">
+  Adicione o CSS com os seletores:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">/* seletor universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* seletor de tag */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* seletor de elementos aninhados */
+nav a {
+    color: #27ae60;
+}
+
+/* seletor de filhos */
+nav &gt; a {
+    display: block;
+    color: #f5a623;
+    padding: 10px;
+}
+
+/* seletor de classes */
+.laranja {
+    color: #f5a623;
+}
+.verde {
+    color: #27ae60;
+}
+
+/* seletor de id */
+#secao-principal {
+    padding: 20px;
+    text-align: center;
+}
+
+/* combinação de seletores */
+#secao-principal &gt; * {
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* seletor de sequência */
+input + input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2 + p {
+    padding: 30px;
+}
+
+/* seletores de propriedade */
+input[name="email"] {
+    background-color: #f5a623;
+}
+
+input[type="password"] {
+    background-color: #27ae60;
+}</code></pre>
+ </div>
+</article>

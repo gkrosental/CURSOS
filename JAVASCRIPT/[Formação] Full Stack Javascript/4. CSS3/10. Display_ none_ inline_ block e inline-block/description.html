@@ -1,0 +1,67 @@
+<article>
+ <div class="article-paragraph">
+  Crie o arquivo HTML:
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="style.css" rel="stylesheet"/>
+    <title>Display: inline, block e inline-block</title>
+</head>
+
+<body>
+    <main>
+        <h1>Propriedade Display</h1>
+
+        <p>Este é um <span class="inline">elemento inline</span>, ou seja, sem quebra de linha</p>
+        <p>Este é um <span class="block">elemento block</span>, ou seja, com quebra de linha</p>
+        <p>Este é um <span class="inline-block">elemento inline-block</span>, ou seja, sem quebra de linha mas com margem</p>
+    </main>
+</body>
+
+</html></textarea>
+ <ol class="article-list">
+  <li>
+   Adicione o arquivo CSS:
+  </li>
+ </ol>
+ <div class="article-code">
+  <pre><code class="language-html">/* inline: não quebra de linha, largura mínima, apenas aceita margem e preenchimento horizontal */
+.inline {
+    display: inline;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* block: quebra de linha, largura máxima, aceita margem e preenchimento vertical */
+.block {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* inline-block: não quebra linha, */
+.inline-block {
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 10px;
+}</code></pre>
+ </div>
+</article>

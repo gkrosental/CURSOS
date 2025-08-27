@@ -1,0 +1,3 @@
+Source code for the game: https://github.com/deepsea/phaser-breakout-loom
+
+All credits to Richard Lawlor.

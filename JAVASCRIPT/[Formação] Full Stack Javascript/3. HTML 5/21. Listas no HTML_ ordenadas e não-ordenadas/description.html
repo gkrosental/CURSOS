@@ -1,0 +1,127 @@
+<article>
+ <div class="article-paragraph">
+  Crie um novo arquivo chamado “listas.html”:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Listas no HTML&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Listas no HTML&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  No HTML temos dois tipos de listas. As listas ordenadas são aquelas em que os itens são pontuados por numeração. Para criar uma lista ordenada usamos a tag &lt;ol&gt; e a tag &lt;li&gt;:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Listas no HTML&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Listas no HTML&lt;/h1&gt;
+
+	&lt;p&gt;Lista ordenada de melhores filmes segundo o IMDB:&lt;/p&gt;
+	&lt;ol&gt;
+		&lt;li&gt;Um Sonho de Liberdade&lt;/li&gt;
+		&lt;li&gt;O Poderoso Chefão&lt;/li&gt;
+		&lt;li&gt;Batman: O Cavaleiro das Trevas&lt;/li&gt;
+		&lt;li&gt;O Poderoso Chefão II&lt;/li&gt;
+		&lt;li&gt;12 Homens e uma Sentença&lt;/li&gt;
+	&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Já as listas não ordenadas são aquelas que não são numeradas e por padrão utilizam uma bolinha. Para criá-las usamos as tags &lt;ul&gt; e &lt;li&gt;:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Listas no HTML&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Listas no HTML&lt;/h1&gt;
+
+	&lt;p&gt;Lista ordenada de melhores filmes segundo o IMDB:&lt;/p&gt;
+	&lt;ol&gt;
+		&lt;li&gt;Um Sonho de Liberdade&lt;/li&gt;
+		&lt;li&gt;O Poderoso Chefão&lt;/li&gt;
+		&lt;li&gt;Batman: O Cavaleiro das Trevas&lt;/li&gt;
+		&lt;li&gt;O Poderoso Chefão II&lt;/li&gt;
+		&lt;li&gt;12 Homens e uma Sentença&lt;/li&gt;
+	&lt;/ol&gt;
+
+	&lt;p&gt;Lista não ordenada de filmes de animação:&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Super Mario Bros&lt;/li&gt;
+		&lt;li&gt;Homem Aranha no Aranhaverso&lt;/li&gt;
+		&lt;li&gt;Divertidamente&lt;/li&gt;
+		&lt;li&gt;Coraline e o Mundo Secreto&lt;/li&gt;
+		&lt;li&gt;Planeta do Tesouro&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Os elementos de listas podem ser usados dentro de outras listas e eles se tornam aninhadas automaticamente com uma leve margem à esquerda:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Aninhamento de listas&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+...
+
+
+    &lt;h2&gt;Bolos&lt;/h2&gt;
+    &lt;ol&gt;
+        &lt;li&gt;
+            &lt;strong&gt;Bolos Tradicionais&lt;/strong&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Bolo de Chocolate Fofinho&lt;/li&gt;
+                &lt;li&gt;Bolo de Cenoura com Cobertura de Chocolate&lt;/li&gt;
+                &lt;li&gt;Bolo de Limão com Glacê de Limão&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;strong&gt;Bolos de Festas&lt;/strong&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Bolo de Aniversário com Recheio de Frutas&lt;/li&gt;
+                &lt;li&gt;Bolo de Casamento com Flores de Açúcar&lt;/li&gt;
+                &lt;li&gt;Bolo de Natal com Frutas Cristalizadas&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;h2&gt;Sobremesas&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;strong&gt;Sobremesas Geladas&lt;/strong&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Sorvete de Chocolate Caseiro&lt;/li&gt;
+                &lt;li&gt;Pudim de Leite Condensado&lt;/li&gt;
+                &lt;li&gt;Gelatina Colorida com Creme&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;strong&gt;Sobremesas Especiais&lt;/strong&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Mousse de Maracujá com Calda de Chocolate&lt;/li&gt;
+                &lt;li&gt;Cheesecake de Morango&lt;/li&gt;
+                &lt;li&gt;Pavê de Chocolate com Biscoitos&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+</article>

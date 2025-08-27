@@ -1,0 +1,106 @@
+<article>
+ <h1 class="article-header">
+  Renderizando as musicas na tela
+ </h1>
+ <div class="article-paragraph">
+  Após importarmos nossas musicas, agora precisamos renderizar elas na tela do nosso aplicativo, e é o que faremos utilizando o IPC do Electron novamente.
+ </div>
+ <div class="article-paragraph">
+  Vamos agora mostrar todas as musicas importadas na tela principal
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">export default function MusicList() {
+    const [musicList, setMusicList] = useState([])
+
+    const fetchMusicList = async () =&gt; {
+        try {
+            await window.electronAPI.SendToElectron('music-get')
+            await window.electronAPI.ReciveFromElectron("music:list", (event, arg) =&gt; {
+                setMusicList(arg);
+            });
+            
+        } catch (error) {
+            console.error('Erro ao obter a lista de músicas:', error);
+        }
+    };
+
+    useEffect(() =&gt; {
+        fetchMusicList()
+    }, []);
+    return (
+        Music List
+            {musicList.length === 0 ? Empty : musicList.map((music, index) =&gt; {
+                return 
+            })}
+        
+    )
+}</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Aqui nos adicionamos 2 conexoes com nosso backend do electron, onde a gente envia um evento pedindo a lista de musicas e outro evento onde a gente recebe essa lista, dentro o useeEffect, esse evento eh solicitado sempre que o componente renderiza, devemos adicionar esses eventos no arquivo main tambem.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">ipcMain.on('music-get', async () =&gt; {
+  sendUpdateList()
+});
+
+
+async function sendUpdateList() {
+  const files = await fs.promises.readdir(musicDir);
+  mainWindow.webContents.send("music:list", files);
+}</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Vale notar que criamos uma funcao onde acontece o envio da lista de musicas atravez do evento music:list
+ </div>
+ <div class="article-paragraph">
+  e vamos reutilizar essa funcao para, quando nosso aplicativo iniciar, ele envie uma lista atualizada com as musicas que cosntam no nosso aplicativo também.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">app.whenReady().then(async () =&gt; {
+  createWindow();
+  await sendUpdateList();
+})</code></pre>
+ </div>
+ <div class="article-paragraph">
+  e dentro de cada MusicInList, vamos adicionar o componente
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">export default function MusicInList({ music }) {
+  function handleDeleteMusic (music){
+    window.electronAPI.SendToElectron('music-delete', music)
+  }
+  function handleAdicionarMusica (music){
+    window.electronAPI.SendToElectron('music-to-play', music);
+  }
+  return (
+    Nome{music}
+             handleAdicionarMusica(music)}/&gt;
+             handleDeleteMusic(music)}/&gt;
+        
+      
+    
+  );
+}</code></pre>
+ </div>
+ <div class="article-paragraph">
+  e vamos adicionar os eventos dentro do main do electron novamente
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">ipcMain.on('music-delete', async (event, file) =&gt; {
+  const filePath = path.join(musicDir, file);
+  fs.unlink(filePath, async (err) =&gt; {
+    if (err) {
+      mainWindow.webContents.send("toast:recive", err)
+    } else {
+      sendUpdateList();
+      mainWindow.webContents.send("toast:recive", "File deleted successfully");
+    }
+  });
+});
+
+ipcMain.on('music-to-play', (event, fileName) =&gt; {
+  mainWindow.webContents.send("music-playable", fileName)
+});</code></pre>
+ </div>
+</article>

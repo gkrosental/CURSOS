@@ -1,0 +1,77 @@
+<article>
+ <div class="article-paragraph">
+  Comece criando o arquivo HTML:
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="style.css" rel="stylesheet"/>
+    <title>Aula de Herança no CSS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Herança no CSS</h1>
+    </header>
+
+    <section>
+        <h2>Exemplos de Herança</h2>
+        <p>Veja como a herança afeta diferentes propriedades de estilo.</p>
+        <div class="parent">
+            <p>Texto com estilo herdado</p>
+            <span>Span dentro da div</span>
+            <div class="child">
+                <p>Texto com estilo específico</p>
+                <span>Span dentro da div</span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html></textarea>
+ <div class="article-paragraph">
+  Quando adicionamos determinados estilos a um elemento pai ele pode ser herdado pelos filhos, como neste cabeçalho:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">header {
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Também podemos ver esse exemplo com elemento mais internos:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: serif;
+}
+
+.parent {
+    font-size: 1.25rem;
+    color: #f64348;
+}
+
+.child {
+    font-size: 2rem;
+    color: #00ff9f;
+}</code></pre>
+ </div>
+</article>

@@ -1,0 +1,50 @@
+<article>
+ <div class="article-paragraph">
+  No mesmo arquivo da aula de links, crie um link externo que leva para o Google. Repare que para isso precisamos especificar o protocolo “http://” no começo do caminho, se não o fizéssemos o navegador entenderia que se trata de uma URL relativa:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Trabalhando com links&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Trabalhando com links&lt;/h1&gt;
+
+	&lt;p&gt;
+		Navegue entre os arquivos das aulas:
+		&lt;a href="/"&gt;Primeira página&lt;/a&gt;
+		&lt;a href="titulos.html"&gt;Aula: títulos e parágrafos&lt;/a&gt;
+		&lt;a href="formatacao.html"&gt;Aula: elementos de formatação&lt;/a&gt;
+		&lt;a href="imagens.html"&gt;Aula: imagens&lt;/a&gt;
+	&lt;/p&gt;
+
+	&lt;p&gt;Acessar a página do &lt;a href="https://google.com"&gt;Google&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Uma técnica interessante para se aplicar nas situações de links para outros sites e abri-los em uma nova guia, garantindo que o usuário conseguirá voltar facilmente para o seu site:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Trabalhando com links&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Trabalhando com links&lt;/h1&gt;
+
+	&lt;p&gt;
+		Navegue entre os arquivos das aulas:
+		&lt;a href="/"&gt;Primeira página&lt;/a&gt;
+		&lt;a href="titulos.html"&gt;Aula: títulos e parágrafos&lt;/a&gt;
+		&lt;a href="formatacao.html"&gt;Aula: elementos de formatação&lt;/a&gt;
+		&lt;a href="imagens.html"&gt;Aula: imagens&lt;/a&gt;
+	&lt;/p&gt;
+
+	&lt;p&gt;Acessar a página do &lt;a href="https://google.com" target="_blank"&gt;Google&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+</article>

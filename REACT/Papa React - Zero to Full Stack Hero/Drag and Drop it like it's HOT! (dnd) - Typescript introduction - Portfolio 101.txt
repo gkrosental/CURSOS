@@ -1,0 +1,5 @@
+Drag and Drop docs: https://docs.dndkit.com/
+
+Portfolio inspiration: https://www.youtube.com/watch?v=BZqzhmlTkAc&ab_channel=Filip
+
+Test it yourself! (REPL.IT): https://repl.it/@PapaReact/drag-and-drop-typescript-example#src/App.tsx

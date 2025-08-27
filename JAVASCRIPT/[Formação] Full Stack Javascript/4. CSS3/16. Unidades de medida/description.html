@@ -1,0 +1,101 @@
+<article>
+ <div class="article-paragraph">
+  Arquivo HTML:
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="index.css" rel="stylesheet"/>
+    <title>Unidades de Medida</title>
+</head>
+
+<body>
+    <header>
+        <h1>Unidades de Medida</h1>
+    </header>
+
+    <section>
+        <div class="box px">10px</div>
+        <div class="box rem">3rem</div>
+        <div class="box em">2em</div>
+        <div class="box em big">2em</div>
+        <div class="box prcnt-33">33%</div>
+        <div class="box prcnt-66">66%</div>
+        <div class="box prcnt-100">100%</div>
+        <div class="box vh">30vh</div>
+        <div class="box vw">50vw</div>
+    </section>
+
+</body>
+
+</html></textarea>
+ <div class="article-paragraph">
+  Arquivo CSS:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #232323;
+    color: #fff;
+    padding: 10px;
+}
+
+section {
+    background-color: #ddd;
+    height: 100px;
+}
+
+.box {
+    border: 1px solid #232323;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 75px;
+}
+
+.px {
+    height: 10px;
+}
+
+/* root element -&gt; 16px * 3 = 48px */
+.rem {
+    height: 3rem;
+}
+
+.em {
+    font-size: 20px;
+    padding: 1em;
+}
+
+.prcnt-33 {
+    height: 33%;
+}
+
+.prcnt-66 {
+    height: 66%;
+}
+
+.prcnt-100 {
+    height: 100%;
+}
+
+/* viewport height */
+.vh {
+    height: 30vh;
+}
+
+/* viewport width */
+.vw {
+    width: 50vw;
+}</code></pre>
+ </div>
+</article>

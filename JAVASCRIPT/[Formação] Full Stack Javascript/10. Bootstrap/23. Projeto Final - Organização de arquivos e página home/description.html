@@ -1,0 +1,355 @@
+<article>
+ <div class="article-paragraph">
+  Organização do projeto
+ </div>
+ <div class="article-paragraph">
+  1. Criar os 3 html (index.html, falcon9, humanFlight) | Criar pasta do Sass| Colocar pasta de imagens
+ </div>
+ <div class="article-paragraph">
+  2. Instalar o Bootstrap, tanto o CSS quanto script através do link
+  <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">
+  </a>
+  <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">
+   https://getbootstrap.com/docs/5.1/getting-started/...
+  </a>
+ </div>
+ <div class="article-paragraph">
+  <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">
+  </a>
+  3. Colocar o title e o favicon do site
+ </div>
+ <div class="article-paragraph">
+  4. Fazer a criação do CSS através do Sass
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">sass --watch sass/style.scss:css/style.css
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  5. Linkar o CSS
+ </div>
+ <div class="article-paragraph">
+  6. Instalar a lib de animação de texto
+  <a href="https://michalsnik.github.io/aos/" target="_blank">
+  </a>
+  <a href="https://michalsnik.github.io/aos/">
+   https://michalsnik.github.io/aos/
+  </a>
+  <br/>
+  <br/>
+  Home do projeto
+ </div>
+ <div class="article-paragraph">
+  1. Criar o primeiro container, que terá classe container00 e container01, para usarmos a herança do Sass( ela vai pegar a div do header e a div do primeiro texto.
+  <br/>
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid container00 container01"&gt;
+         &lt;div class="container"&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  2. Colocar depois disso o header dentro do segundo container, para criar a navbar
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;header class="header"&gt;
+&lt;nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-4"&gt;
+&lt;div class="container-fluid"&gt;
+&lt;a class="navbar-brand" href="/index.html"&gt;
+&lt;img src="/imagens/logo-obc-2021-darkbg.png" alt="logoOneBitCode" class="logoPc"&gt;
+&lt;/a&gt;
+&lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation"&gt;
+&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+&lt;ul class="navbar-nav"&gt;
+&lt;li class="nav-item"&gt;
+&lt;a class="nav-link active" aria-current="page" href="/falcon9.html"&gt;FALCON 9&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="nav-item"&gt;
+&lt;a class="nav-link active" href="/humamFlight.html"&gt;HUMAN SPACE FLIGHT&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  3. Colocar dentro de container01 uma div apenas para o título e para o botão
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container titlePadding" data-aos="fade-up" data-aos-duration="1500"&gt;
+            &lt;p class="h5" id="lauchComing"&gt;LANÇAMENTO A CAMINHO&lt;/p&gt;
+            &lt;p class="h1"&gt;MISSÃO EQUIPE-3&lt;/p&gt;
+            &lt;button type="button" class="btn btn-outline-light mt-5" id="button"&gt;SAIBA MAIS&lt;/button&gt;
+            &lt;div class="container text-center"&gt;
+                &lt;img src="/imagens/home/arrowDown.gif" alt="arrowDown" class="arrowDown"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  4. Colocar agora, um novo container, com as mesmas características do de cima, mudando apenas a segunda classe
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid container00 container02"&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  5. Dentro dela, vai vir uma outra div com o container de fato e outra classe chamada titlePadding
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container titlePadding"&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  6. Agora sim vêm os títulos da página, colocando dois textos e 1 botão para o título
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;p class="h5" id="lauchComing"&gt;MISSÃO CONCLUÍDA&lt;/p&gt;
+&lt;p class="h1 shortTitle"&gt;MISSÃO EQUIPE-2 RETORNOU PARA A TERRA&lt;/p&gt;
+&lt;button type="button" class="btn btn-outline-light mt-5" id="button"&gt;SAIBA MAIS&lt;/button&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  7. Iremos para o container 03, basta copiar o container 02 e mudar os textos, dessa forma vamos ter uma economia de tempo.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid container00 container03"&gt;
+         &lt;div class="container titlePadding" data-aos="fade-down" data-aos-duration="1500"&gt;
+            &lt;p class="h5" id="lauchComing"&gt;MISSÃO CONCLUÍDA&lt;/p&gt;
+            &lt;p class="h1 shortTitle"&gt;DRAGON RETORNOU PARA A TERRA&lt;/p&gt;
+            &lt;button type="button" class="btn btn-outline-light mt-5" id="button"&gt;SAIBA MAIS&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  8. Mesma coisa com o 4, que nesse caso é o último container da página
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid container00 container04"&gt;
+         &lt;div class="container titlePadding" data-aos="fade-down-right" data-aos-duration="1500"&gt;
+            &lt;p class="h1 mediumTitle"&gt;STARSHIP POUSA ASTRONAUTAS DA NASA NA LUA&lt;/p&gt;
+            &lt;button type="button" class="btn btn-outline-light mt-5" id="button"&gt;SAIBA MAIS&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  9. Agora iremos para o footer. Faremos ele por sí só um footter, que terá um container fluid e uma classe chamada footer
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;footer class="container-fluid footer"&gt;
+&lt;/footer&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  10. Agora colocaremos os elementos do footer, um span para ser o texto de copyright, e 3 âncoras para colocarmos
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;span class="me-4 copyOBC"&gt;OneBitCode © 2021&lt;/span&gt;
+&lt;a href="https://www.instagram.com/onebitcode/?hl=en" target="blank" class="me-4"&gt;Instagram&lt;/a&gt;
+&lt;a href="https://www.youtube.com/channel/UC44Mzz2-5TpyfklUCQ5NuxQ" class="me-4"&gt;YouTube&lt;/a&gt;
+&lt;a href="https://twitter.com/onebitcode"&gt;Twitter&lt;/a&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Style do projeto
+ </div>
+ <div class="article-paragraph">
+  Fazer o arquivo de variável de cor do projeto
+  <br/>
+ </div>
+ <div class="article-paragraph">
+  Cor de hover de links: #b9b9b9
+ </div>
+ <div class="article-paragraph">
+  Cor de copyright da obc no footer: #555252
+ </div>
+ <div class="article-paragraph">
+  Cor do item da tabela: #d8d8d8
+ </div>
+ <div class="article-paragraph">
+  Padding fixo: 20px 0px
+ </div>
+ <div class="article-paragraph">
+  1. Criar uma pasta para as páginas
+ </div>
+ <div class="article-paragraph">
+  2. Fazer a criação do sass de cada página e fazer a criação do local onde terá os elementos comuns - Home, falcon9, humanSpace
+ </div>
+ <div class="article-paragraph">
+  3. Fazer a criação da pasta de comum elements
+ </div>
+ <div class="article-paragraph">
+  ​4. Fazer a criação da estilização do header
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">​.header{
+ font-size: 12px;
+ font-weight: bold;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  ​5. Fazer agora a alteração de todos os container que temos, apra qe eles fique com as mesmas configurações, e depois a gente só precise fazer a adição dos backgrounds
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">​.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  ​6. Fazer agora a nossa alteração de arrow, para que ela fique centralizada, já que é um gif, não precisamos fazer nada alem de estilizar ela.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">​.arrowDown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  7. Agora, nesse primeiro momento vamos fazer a alteração da logo no PC, depois disso vamos fazer a alteração da logo para resoluções menores.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.logoPc {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  8. Agora iremos mexer na home de fato, vamos primeiramente colocar os backgrounds, como usaremos as heranças, faremos tudo dentro de container
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.container00 {
+  &amp;.container01 {
+    background-image: url(../imagens/home/01.jpg);
+  }
+  &amp;.container02 {
+    background-image: url(../imagens/home/03.jpg);
+  }
+  &amp;.container03 {
+    background-image: url(../imagens/home/02.gif);
+  }
+  &amp;.container04 {
+    background-image: url(../imagens/home/04.jpg);
+  }
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  9. Faremos agora, alteração na nossa classe titlePadding, que é a classe que vamos ter em todos os títulos, com ela, iremos colocar um padding top para que ele fique com a distância que queremos
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.titlePadding{
+  padding-top: 200px;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  10. Faremos alterações em shortTitle, e mediumTitle, que são os títulos que estão posicionados dentro da nossa página
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.shortTitle {
+  width: 550px;
+  margin-bottom: -25px;
+}
+.mediumTitle {
+  width: 650px;
+  margin-bottom: -25px;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  11. Agora iremos fazer mais algumas alterações no comumElements, para finalizamos, iremos alterar os botões
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">#button{
+ padding: 15px 35px;
+ border: 2px solid white;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  12. E agora, iremos finalizar e ir para os media query dos elementos comuns e também específicos da nossa home.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: white;
+    &amp;:hover {
+      color: $link-hover;
+    }
+  }
+}
+.copyOBC {
+  color: $copy-obc;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  13. Iremos fazer primeiramente dois, que será em 405px e em 350px, na parte de elementos comuns, alterando tamanhos no geral
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">@media (max-width: 405px) {
+  .logoPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .logoPc {
+    width: 150px;
+    margin-top: 15px;
+ }
+} ;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  14. E agora faremos umas alterações em home, especificamente na parte de títulos, que fará com que a responsividade dos nossos títulos esteja completa.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+
+
+  .shortTitle {
+    width: auto;
+    font-size: 50px;
+  }
+
+
+  .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+} ;</code></pre>
+ </div>
+</article>

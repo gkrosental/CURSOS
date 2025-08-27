@@ -1,0 +1,61 @@
+<article>
+ <div class="article-paragraph">
+  1. O off canvas fica nessa área da documentação:
+  <a href="https://bootstrapdoconebitcode.netlify.app/pages/12offcanvas" target="_blank">
+  </a>
+  <a href="https://bootstrapdoconebitcode.netlify.app/pages/12offcanvas">
+   https://bootstrapdoconebitcode.netlify.app/pages/1...
+  </a>
+  Ele é algo que você pode usar para colocar um aviso na tela por exemplo, pois dessa forma, você vai poder fazer de diversas formas o que quiser.
+ </div>
+ <div class="article-paragraph">
+  2. Temos aqui no offcanvas o nosso primeiro estilo, que é o que vem da lateral, com isso, você consegue colocar aqui por exemplo uma navbar personalizada. Você tem 2 estilos de chamada, uma delas é com o href e outra é com data-bs-target, não tem muita diferença na hora do uso.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">​&lt;a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"&gt;
+    Link with href
+&lt;/a&gt;
+&lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"&gt;
+    Button with data-bs-target
+&lt;/button&gt;
+              
+&lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"&gt;
+    &lt;div class="offcanvas-header"&gt;
+        &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Offcanvas&lt;/h5&gt;
+        &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="offcanvas-body"&gt;
+        &lt;div&gt;
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        &lt;/div&gt;
+        &lt;div class="dropdown mt-3"&gt;
+            &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"&gt;
+                Dropdown button
+            &lt;/button&gt;
+            &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  3. Temos também aqui um que vem de cima, que você poderia utilizar tanto com link quanto com botão, e o uso deles é basicamente o mesmo, pode usar tanto para navbar quando para aviso, etc...
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"&gt;Toggle top offcanvas&lt;/button&gt;
+&lt;div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"&gt;
+    &lt;div class="offcanvas-header"&gt;
+        &lt;h5 id="offcanvasTopLabel"&gt;Offcanvas top&lt;/h5&gt;
+        &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="offcanvas-body"&gt;
+           ...
+    &lt;/div&gt;
+&lt;/div&gt;​
+​</code></pre>
+ </div>
+</article>

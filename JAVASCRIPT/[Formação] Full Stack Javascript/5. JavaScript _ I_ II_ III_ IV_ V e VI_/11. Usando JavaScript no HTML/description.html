@@ -1,0 +1,68 @@
+<article>
+ <div class="article-paragraph">
+  Para começar. vamos criar uma página html vazia (você pode utilizar o snippet html:5 do VS Code):
+  <br/>
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Usando Javascript em uma Página HTML</title>
+</head>
+<body>
+  <h1>
+    Usando Javascript em uma Página HTML
+  </h1>
+</body>
+</html></textarea>
+ <div class="article-paragraph">
+  Agora, se quisermos adicionar código javascript a essa página, basta utilizar a tag &lt;script&gt;:
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Usando Javascript em uma Página HTML</title>
+
+  <script>
+    console.log("Olá, mundo!")
+  </script>
+</head>
+<body>
+  <h1>Usando Javascript em uma Página HTML</h1>
+</body>
+</html></textarea>
+ <div class="article-paragraph">
+  No entanto, se quisermos manter nosso html organizado, devemos evitar colocar scripts diretamente dentro dele. Para isso podemos criar um arquivo .js independente e mover nosso código para ele:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">console.log("Olá, mundo!")</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Por fim, para incluir esse código no html podemos usar a tag &lt;script&gt; com o atributo src:
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Incluindo Javascript em uma Página HTML</title>
+
+  <script src="./index.js"></script>
+</head>
+<body>
+  <h1>Incluindo Javascript em uma Página HTML</h1>
+</body>
+</html></textarea>
+</article>

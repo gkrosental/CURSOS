@@ -1,0 +1,149 @@
+<article>
+ <ol class="article-list">
+  <li>
+   As tabelas são elementos do HTML que permitem organizar dados em linhas e colunas. São muito utilizadas por conta da necessidade de mostrar dados de forma organizada para os usuários. As principais tags para se criar uma tabela são a &lt;table&gt;, o &lt;tr&gt; e o &lt;td&gt;:Obs.: repare que o &lt;tr&gt; é a tag da linha e o &lt;td&gt; é a tag da coluna.
+  </li>
+ </ol>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Tabelas no HTML&lt;/title&gt;
+&lt;head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Criação de Tabelas no HTML&lt;/h1&gt;
+	&lt;table&gt;
+	    &lt;tr&gt;
+	        &lt;th&gt;Coluna 1&lt;/th&gt;
+	        &lt;th&gt;Coluna 2&lt;/th&gt;
+	    &lt;/tr&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;Dado 1&lt;/td&gt;
+	        &lt;td&gt;Dado 2&lt;/td&gt;
+	    &lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Além dos elementos básicos também temos tags para criar tabelas mais elaboradas:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Tabelas no HTML&lt;/title&gt;
+&lt;head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Criação de Tabelas no HTML&lt;/h1&gt;
+	&lt;table&gt;
+	    &lt;tr&gt;
+	        &lt;th&gt;Coluna 1&lt;/th&gt;
+	        &lt;th&gt;Coluna 2&lt;/th&gt;
+	    &lt;/tr&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;Dado 1&lt;/td&gt;
+	        &lt;td&gt;Dado 2&lt;/td&gt;
+	    &lt;/tr&gt;
+	&lt;/table&gt;
+
+	&lt;hr&gt;
+
+	&lt;h2&gt;Tabelas com cabeçalho&lt;/h2&gt;
+	&lt;table&gt;
+		&lt;thead&gt;
+	    &lt;tr&gt;
+	        &lt;th&gt;Nome&lt;/th&gt;
+	        &lt;th&gt;Idade&lt;/th&gt;
+	        &lt;th&gt;Profissão&lt;/th&gt;
+	    &lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;João&lt;/td&gt;
+	        &lt;td&gt;30&lt;/td&gt;
+	        &lt;td&gt;Engenheiro&lt;/td&gt;
+	    &lt;/tr&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;Maria&lt;/td&gt;
+	        &lt;td&gt;25&lt;/td&gt;
+	        &lt;td&gt;Advogada&lt;/td&gt;
+	    &lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Também é possível utilizar os atributos “colspan” e “rowspan” para manipular quantas células a tag irá ocupar:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Tabelas no HTML&lt;/title&gt;
+&lt;head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;Criação de Tabelas no HTML&lt;/h1&gt;
+	&lt;table&gt;
+	    &lt;tr&gt;
+	        &lt;th&gt;Coluna 1&lt;/th&gt;
+	        &lt;th&gt;Coluna 2&lt;/th&gt;
+	    &lt;/tr&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;Dado 1&lt;/td&gt;
+	        &lt;td&gt;Dado 2&lt;/td&gt;
+	    &lt;/tr&gt;
+	&lt;/table&gt;
+
+	&lt;hr&gt;
+
+	&lt;h2&gt;Tabelas com cabeçalho&lt;/h2&gt;
+	&lt;table&gt;
+		&lt;thead&gt;
+	    &lt;tr&gt;
+	        &lt;th&gt;Nome&lt;/th&gt;
+	        &lt;th&gt;Idade&lt;/th&gt;
+	        &lt;th&gt;Profissão&lt;/th&gt;
+	    &lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;João&lt;/td&gt;
+	        &lt;td&gt;30&lt;/td&gt;
+	        &lt;td&gt;Engenheiro&lt;/td&gt;
+	    &lt;/tr&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;Maria&lt;/td&gt;
+	        &lt;td&gt;25&lt;/td&gt;
+	        &lt;td&gt;Advogada&lt;/td&gt;
+	    &lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+
+	&lt;hr&gt;
+
+	&lt;h2&gt;Tabelas com células personalizadas&lt;/h2&gt;
+	&lt;table&gt;
+		&lt;thead&gt;
+	    &lt;tr&gt;
+	        &lt;th colspan="2"&gt;Informações Pessoais&lt;/th&gt;
+	        &lt;th&gt;Contato&lt;/th&gt;
+	    &lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;Nome:&lt;/td&gt;
+	        &lt;td&gt;João&lt;/td&gt;
+	        &lt;td rowspan="2"&gt;Telefone: 123456&lt;/td&gt;
+	    &lt;/tr&gt;
+	    &lt;tr&gt;
+	        &lt;td&gt;Idade:&lt;/td&gt;
+	        &lt;td&gt;30&lt;/td&gt;
+	    &lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+</article>

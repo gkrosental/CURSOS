@@ -1,0 +1,197 @@
+<article>
+ <div class="article-paragraph">
+ </div>
+ <h2 class="article-header">
+  Fila de Espera
+ </h2>
+ <ol class="article-list">
+  <li>
+   Começaremos criando a página html e o script:
+  </li>
+ </ol>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Fila de Espera</title>
+</head>
+<body>
+  <h1>Fila de Espera</h1>
+  <script src="./consultorio.js"></script>
+</body>
+</html></textarea>
+ <div class="article-paragraph">
+  No script, podemos já adicionar o array da fila, a variável de opção e o laço do while para manter o menu em execução:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">let fila = []
+let opcao = ""
+
+do {
+  
+} while (opcao !== "3");</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Dentro do do while vamos começar montando a lista de pacientes em uma variável de texto:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">let fila = []
+let opcao = ""
+
+do {
+  let pacientes = ""
+  for (let i = 0; i &lt; fila.length; i++) {
+    pacientes += (i + 1) + "º - " + fila[i] + "\n"
+  }
+
+} while (opcao !== "3");</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Depois podemos adicionar o prompt que irá mostrar a fila de espera e as opções do menu:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">let fila = []
+let opcao = ""
+
+do {
+  let pacientes = ""
+  for (let i = 0; i &lt; fila.length; i++) {
+    pacientes += (i + 1) + "º - " + fila[i] + "\n"
+  }
+
+  opcao = prompt(
+    "Pacientes:\n" + pacientes +
+    "\nEscolha uma ação:\n1 - Novo paciente\n2 - Consultar paciente\n3 - Sair"
+  )
+
+} while (opcao !== "3");</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Para encerrar, adicionaremos o switch contendo cada uma das opções:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">let fila = []
+let opcao = ""
+
+do {
+  let pacientes = ""
+  for (let i = 0; i &lt; fila.length; i++) {
+    pacientes += (i + 1) + "º - " + fila[i] + "\n"
+  }
+
+  opcao = prompt(
+    "Pacientes:\n" + pacientes +
+    "\nEscolha uma ação:\n1 - Novo paciente\n2 - Consultar paciente\n3 - Sair"
+  )
+
+  switch (opcao) {
+    case "1":
+      const novoPaciente = prompt("Qual é o nome do paciente?")
+      fila.push(novoPaciente)
+      break
+    case "2":
+      const pacienteConsultado = fila.shift()
+      if (!pacienteConsultado) {
+        alert("Não há pacientes na fila!")
+      } else {
+        alert(pacienteConsultado + " foi removido da fila.")
+      }
+      break
+    case "3":
+      alert("Encerrando...")
+      break
+    default:
+      alert("Opção inválida!")
+      break
+  }
+} while (opcao !== "3");</code></pre>
+ </div>
+ <h2 class="article-header">
+  Pilha de Cartas
+ </h2>
+ <ol class="article-list">
+  <li>
+   Primeiro criamos a página html e o script js:
+  </li>
+ </ol>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Pilha de Cartas</title>
+</head>
+<body>
+  <h1>Pilha de Cartas</h1>
+  <script src="./baralho.js"></script>
+</body>
+</html></textarea>
+ <div class="article-paragraph">
+  Depois, no script, começamos criando um array para ser o baralho, uma variável para a opção do menu e o laço do while que funcionará enquanto a opção for diferente de “3”:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">const baralho = []
+let opcao = ""
+
+do {
+
+} while (opcao !== "3");</code></pre>
+ </div>
+ <div class="article-paragraph">
+  A seguir precisamos exibir um prompt com a quantidade de cartas no baralho e as opções:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">const baralho = []
+let opcao = ""
+
+do {
+  opcao = prompt(
+    "Cartas no baralho: " + baralho.length +
+    "\n1. Adicionar uma carta\n2. Puxar uma carta\n3. Sair"
+  )
+
+} while (opcao !== "3");</code></pre>
+ </div>
+ <div class="article-paragraph">
+  E então, para terminar, adicionamos o switch com um comportamento para cada opção:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">const baralho = []
+let opcao = ""
+
+do {
+  opcao = prompt(
+    "Cartas no baralho: " + baralho.length +
+    "\n1. Adicionar uma carta\n2. Puxar uma carta\n3. Sair"
+  )
+
+  switch (opcao) {
+    case "1":
+      const novaCarta = prompt("Qual é a carta?")
+      baralho.push(novaCarta)
+      break
+    case "2":
+      const cartaPuxada = baralho.pop()
+      if (!cartaPuxada) {
+        alert("Não há nenhuma carta no baralho!")
+      } else {
+        alert("Você puxou um(a) " + cartaPuxada)
+      }
+      break
+    case "3":
+      alert("Saindo...")
+      break
+    default:
+      alert("Opção inválida!")
+  }
+
+} while (opcao !== "3");</code></pre>
+ </div>
+</article>

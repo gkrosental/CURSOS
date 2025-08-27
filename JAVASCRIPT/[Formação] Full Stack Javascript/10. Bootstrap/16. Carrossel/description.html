@@ -1,0 +1,123 @@
+<article>
+ <div class="article-paragraph">
+  1. Os carrossel ficam nessa parte da documentação:
+  <a href="https://bootstrapdoconebitcode.netlify.app/pages/9carrossel" target="_blank">
+  </a>
+  <a href="https://bootstrapdoconebitcode.netlify.app/pages/9carrossel">
+   https://bootstrapdoconebitcode.netlify.app/pages/9...
+  </a>
+  com ele você consegue fazer várias manipulações, com isso, fica fácil de colocar imagens em diferentes lugares com diferentes objetivos.​
+ </div>
+ <div class="article-paragraph">
+  2. O primeiro é um carrossel automático, que você não tem controle sobre ele em si, pode ter controle sobre o tempo dele adicionando algumas coisas nele.​
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">​
+&lt;div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"&gt;
+    &lt;div class="carousel-inner"&gt;
+        &lt;div class="carousel-item active"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  3. O carrossel abaixo é um apenas com controle, ele não vai mudar automaticamente, ele vai ficar fixo no local e ter a mudança feita pelo usuário.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">
+&lt;div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"&gt;
+    &lt;div class="carousel-inner"&gt;
+        &lt;div class="carousel-item active" data-bs-interval="10000"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item" data-bs-interval="2000"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev"&gt;
+        &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next"&gt;
+        &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="visually-hidden"&gt;Next &lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  4. Abaixo temos um que tem controle, junto com marcação mas é automático, você consegue misturar vários conceitos de carrossel, para deixar ele de acordo com o que a sua aplicação precisa.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">
+​&lt;div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"&gt;
+    &lt;div class="carousel-indicators"&gt;
+        &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"&gt;&lt;/button&gt;
+        &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"&gt;&lt;/button&gt;
+        &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-inner"&gt;
+        &lt;div class="carousel-item active"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;div&gt;
+   &lt;/div&gt;
+    &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"&gt;
+        &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"&gt;
+        &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  5. No final temos o carrossel com controle mas automático também, que é um dos mais comuns que se tem nos sites.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">​
+​&lt;div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"&gt;
+    &lt;div class="carousel-inner"&gt;
+        &lt;div class="carousel-item active"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"&gt;
+        &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"&gt;
+        &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  6. Temos diversas modificações possíveis com carrossel, você pode modificar de acordo com o que for do seu interesse e de interesse da sua aplicação, com isso, você consegue fazer o carrossel ficar alinhado com o que você quer.
+ </div>
+</article>

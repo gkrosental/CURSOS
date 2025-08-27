@@ -1,0 +1,255 @@
+<article>
+ <div class="article-paragraph">
+  1. Fazer a estilização de todos os containers, colocando background neles, também no carrossel
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.container00 {
+  &amp;.container05 {
+    background-image: url(../imagens/falcon9/01.jpg);
+  }
+  &amp;.container06 {
+    background-image: url(../imagens/falcon9/02.jpg);
+  }
+  &amp;.carrossel01 {
+    background-image: url(../imagens/falcon9/03.jpg);
+  }
+  &amp;.carrossel02 {
+    background-image: url(../imagens/falcon9/04.jpg);
+  }
+  &amp;.carrossel03 {
+    background-image: url(../imagens/falcon9/05.jpg);
+  }
+  &amp;.carrossel04 {
+    background-image: url(../imagens/falcon9/06.jpg);
+  }
+  &amp;.carrossel05 {
+    background-image: url(../imagens/falcon9/07.jpg);
+  }
+  &amp;.container07 {
+    background-image: url(../imagens/falcon9/08.jpg);
+  }
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  2. Vamos fazer a alteração do titleContent, que é a classe primária do nosso container com textos
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  3. Iremos fazer agora a alteração diretamente do title do nosso conteúdo.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.titleFalcon9 {
+  font-size: 90px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 514;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  4. Agora faremos as alterações que precisamos nos números, fazendo com que eles fiquem do jeito que é necessário para termos os números certinhos​
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.numbers {
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 90px;
+  }
+  p {
+    font-size: 20px;
+  }
+}</code></pre>
+ </div>
+ <div class="article-paragraph">
+  5. Iremos agora manipular o texto da descrição, para que ela tenha o que queremos
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.falcon9Desc {
+  font-size: 22px;
+  width: 640px;
+  line-height: 50px;
+}
+</code></pre>
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.containerFalcon9Desc {
+  display: grid;
+  height: 90vh;
+  align-items: center;
+  justify-content: left;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  6. Manipularemos aqui agora algumas propriedades da tabela
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">#overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  7. Faremos por último a manipulação dos slides, para que tenhamos os textos e o container de slide manipulado da melhor forma possível
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.carrosselSlide {
+  img {
+    height: 100vh;
+  }
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  8. Faremos agora a manipulação dos textos
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.carousselText {
+  background-color: black;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  9. E agora, iremos finalizar e ir para os media query dos elementos comuns e também específicos da nossa home.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: white;
+    &amp;:hover {
+      color: $link-hover;
+    }
+  }
+}
+.copyOBC {
+  color: $copy-obc;
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  10. Vamos em commun elements para fazer a criação do nosso downloadDesc
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+  a {
+    text-decoration: none;
+    color: $link-hover;
+    &amp;:hover {
+      color: $table-item-color;
+    }
+  }
+  button {
+    border: 2px solid white;
+    margin-right: 10px;
+  }
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  11. Responsividade, começando pela página local, faremos 3 pontos de responsividade, 2 locais na falcon9 e 1 no communElements, esse será com 1024px de largura
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">@media (max-width: 1024px) {
+  .numbers {
+    p {
+      font-size: 18px;
+    }
+  }
+  .falcon9Desc {
+    font-size: 26px;
+  }
+  #overViewPosition {
+    display: block;
+    width: 500px;
+    margin-left: 13%;
+    padding-top: 20%;
+  }
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  12. Agora faremos com 425px de largura
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">@media (max-width: 425px) {
+  .titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  .titleFalcon9 {
+    font-size: 50px;
+  }
+  .numbers {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .containerFalcon9Desc {
+    p {
+      width: auto;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  #overViewPosition {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-left: auto;
+  }
+  .titleOverView {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .subTitleOvewView {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  13. Faremos uma de 510px de largura para o downloadDesc na área comum, pois iremos usar também no human
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">@media (max-width: 510px) {
+  .downloadDesc {
+    button {
+      margin: 10px 0px;
+    }
+  }
+}</code></pre>
+ </div>
+</article>

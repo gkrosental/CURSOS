@@ -1,0 +1,90 @@
+<article>
+ <div class="article-paragraph">
+  Pontos abordados na aula:
+ </div>
+ <ol class="article-list">
+  <li>
+   A caixa de informação recebeu o atributo
+   <code>
+    role="alert"
+   </code>
+   para informar aos usuários que ela contém uma mensagem importante.
+  </li>
+  <li>
+   Os campos do formulário obrigatórios receberam o atributo
+   <code>
+    aria-required="true"
+   </code>
+   para indicar que são campos de preenchimento obrigatório.
+  </li>
+  <li>
+   Os campos do formulário também receberam o atributo
+   <code>
+    aria-label
+   </code>
+   para fornecer uma descrição personalizada para os leitores de tela, tornando a interação mais clara.
+  </li>
+  <li>
+   As caixas de mensagem de sucesso e erro receberam o atributo
+   <code>
+    role="status"
+   </code>
+   e
+   <code>
+    aria-live
+   </code>
+   para notificar aos usuários sobre ações importantes que ocorrem dinamicamente.
+  </li>
+ </ol>
+ <div class="article-paragraph">
+  Código da aula:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Atributos de Acessibilidade WAI-ARIA&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1&gt;Atributos de Acessibilidade WAI-ARIA&lt;/h1&gt;
+
+  &lt;!-- caixa de informação com atributos ARIA --&gt;
+  &lt;div role="alert" aria-labelledby="infoHeading" aria-describedby="infoContent"&gt;
+    &lt;h2 id="infoHeading"&gt;Informação Importante&lt;/h2&gt;
+    &lt;p id="infoContent"&gt;Esta é uma mensagem informativa para os usuários.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;!-- formulário com campos obrigatórios --&gt;
+  &lt;form action="#" method="post"&gt;
+    &lt;div&gt;
+      &lt;label for="name"&gt;Nome:&lt;/label&gt;
+      &lt;input type="text" id="name" name="name" required aria-required="true" aria-label="Campo de Nome"&gt;
+      &lt;br&gt;
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="email" id="email" name="email" required aria-required="true" aria-label="Campo de Email"&gt;
+      &lt;br&gt;
+      &lt;label for="message"&gt;Mensagem:&lt;/label&gt;
+      &lt;textarea id="message" name="message" required aria-required="true" aria-label="Campo de Mensagem"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+    &lt;div role="status" aria-live="polite"&gt;
+      &lt;!-- mensagem de sucesso dinâmica --&gt;
+      &lt;p&gt;Mensagem enviada com sucesso!&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div role="status" aria-live="assertive"&gt;
+      &lt;!-- mensagem de erro dinâmica --&gt;
+      &lt;p&gt;Erro ao enviar a mensagem. Por favor, verifique os campos obrigatórios.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;button type="submit" aria-label="Enviar Formulário"&gt;Enviar&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+ </div>
+</article>

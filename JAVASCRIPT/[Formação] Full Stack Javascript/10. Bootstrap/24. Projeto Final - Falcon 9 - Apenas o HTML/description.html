@@ -1,0 +1,420 @@
+<article>
+ <div class="article-paragraph">
+  HTML do Projeto
+  <br/>
+  <br/>
+  1. Vamos primeiramente copiar todo o HTML da página home, para deixarmos já algumas coisas como padrão, como o footer e o header, assim também como alguns containers.
+ </div>
+ <div class="article-paragraph">
+  2. Vamos fazer a mudança de container01 para container05 e com isso vamos colocar dentro desse container mais um, onde ficaram os elementos.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container text-center titleContent" data-aos="fade-up" data-aos-duration="1500"&gt;
+         &lt;h1 class="titleFalcon9"&gt;FALCON 9&lt;/h1&gt;
+         &lt;p class="h5 subTitleFalcon"&gt;PRIMEIRA CLASSE DE FOGUETES DE ORBITA CAPAZ DE VOLTAR&lt;/p&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  3. Faremos mais abaixo, um container fluid para os números, aqui usaremos o grid do Bootstrap
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid numbers"&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  4. Iremos criar uma div com linha e 3 colunas, que elas vão ter as suas classes.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="row text-center"&gt;
+        &lt;div class="col-sm col1"&gt;
+            &lt;h1 class="titleNumb" data-aos="flip-up" data-aos-duration="1000"&gt;126&lt;/h1&gt;
+            &lt;p class="subTitleNumb" data-aos="flip-up" data-aos-duration="1000"&gt;LANÇAMENTOS TOTAIS&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm"&gt;
+            &lt;h1 class="titleNumb" data-aos="flip-left" data-aos-duration="1000"&gt;86&lt;/h1&gt;
+            &lt;p class="subTitleNumb" data-aos="flip-left" data-aos-duration="1000"&gt;DESEMBARQUES TOTAIS&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm col3"&gt;
+            &lt;h1 class="titleNumb" data-aos="flip-right" data-aos-duration="1000"&gt;68&lt;/h1&gt;
+            &lt;p class="subTitleNumb" data-aos="flip-right" data-aos-duration="1000"&gt;FOGUETES RECUPERADOS&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  5. Agora iremos criar um container06, que terá nele os elementos abaixo dos números na página principal
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid container00 container06"&gt;
+    &lt;div class="container containerFalcon9Desc"&gt;
+        &lt;p class="falcon9Desc" data-aos="fade-right" data-aos-duration="1500"&gt;
+            O Falcon 9 é um foguete reutilizável de dois estágios projetado e fabricado pela SpaceX para o
+            transporte confiável e seguro de pessoas e cargas úteis para a órbita da Terra e além. Falcon 9 é o
+            primeiro foguete reutilizável de classe orbital do mundo. A capacidade de reutilização permite que a
+            SpaceX refile as partes mais caras do foguete, o que, por sua vez, reduz o custo do acesso ao espaço.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  6. Agora iremos para a parte do carrossel, iremos pegar um carrossel qualquer no Bootstrap, que nesse caso usamos um padrão com indicadores para passarmos e ao invés de colocarmos imagens dentro dos carrossel item, iremos colocar textos, e usaremos o background para as imagens
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"&gt;
+        &lt;div class="carousel-inner"&gt;
+            &lt;div class="carousel-item active container00 carrossel01" data-bs-interval="3000000"&gt;
+                &lt;div class="container" id="overViewPosition"&gt;
+                    &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                    &lt;h3 class="titleOverView"&gt;VISÃO GERAL&lt;/h3&gt;
+                    &lt;table class="table" id="widthTable"&gt;
+                       &lt;tbody&gt;
+                            &lt;tr data-aos="fade-right" data-aos-duration="1500"&gt;
+                                &lt;td&gt;ALTURA&lt;/td&gt;
+                                &lt;td class="text-end"&gt;70 m&lt;span class="corEscuraTxt"&gt;/ 229.6 f&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                             &lt;tr data-aos="fade-right" data-aos-duration="1200"&gt;
+                                &lt;td&gt;DIAMETRO&lt;/td&gt;
+                                &lt;td class="text-end"&gt;3.7 m&lt;span class="corEscuraTxt"&gt; / 12 ft&lt;/span&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                            &lt;tr data-aos="fade-right" data-aos-duration="1500"&gt;
+                                &lt;td&gt;MASSA&lt;/td&gt;
+                                &lt;td class="text-end"&gt;549,054 kg&lt;span class="corEscuraTxt"&gt; / 1,207,920 lb&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr data-aos="fade-right" data-aos-duration="1400"&gt;
+                                &lt;td&gt;CARGA MÁXIMA PARA LEO&lt;/td&gt;
+                                &lt;td class="text-end"&gt;22,800 kg&lt;span class="corEscuraTxt"&gt; / 50,265 lb&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr data-aos="fade-right" data-aos-duration="1600"&gt;
+                                &lt;td&gt;CARGA MÁXIMA PARA GTO&lt;/td&gt;
+                                &lt;td class="text-end"&gt;8,300 kg&lt;span class="corEscuraTxt"&gt; / 18,300 lb&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr data-aos="fade-right" data-aos-duration="1300"&gt;
+                                &lt;td&gt;CARGA MÁXIMA PARA MARTE&lt;/td&gt;
+                                &lt;td class="text-end"&gt;4,020 kg&lt;span class="corEscuraTxt"&gt; / 8,860 lb&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                     &lt;/tbody&gt;
+                     &lt;/table&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item container00 carrossel02" data-bs-interval="3000000"&gt;
+               &lt;div class="container" id="overViewPosition"&gt;
+                    &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                    &lt;h3 class="titleOverView"&gt;PRIMEIRO ESTÁGIO&lt;/h3&gt;
+                     &lt;p&gt;
+                        Falcon 9's O primeiro estágio do Falcon 9 incorpora nove motores Merlin e tanques de liga de
+                        alumínio-lítio
+                        contendo oxigênio líquido e propelente de querosene de grau de foguete (RP-1).
+                     &lt;/p&gt;
+                    &lt;p&gt;
+                        O Falcon 9 gera mais de 1,7 milhão de libras de empuxo ao nível do mar.
+                    &lt;/p&gt;
+                 &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item container00 carrossel03" data-bs-interval="3000000"&gt;
+                 &lt;div class="container" id="overViewPosition"&gt;
+                    &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                    &lt;h3 class="titleOverView"&gt;SEGUNDO ESTÁGIO&lt;/h3&gt;
+                    &lt;p&gt;
+                        O segundo estágio, alimentado por um único motor a vácuo Merlin, entrega a carga útil do Falcon
+                        9 à órbita desejada. O motor do segundo estágio acende alguns segundos após a separação do
+                        estágio e pode ser reiniciado várias vezes para colocar várias cargas em diferentes órbitas.
+                    &lt;/p&gt;
+                    &lt;table class="table" id="widthTable"&gt;
+                      &lt;tbody&gt;
+                             &lt;tr&gt;
+                                &lt;td&gt;NÚMERO DE MOTORES&lt;/td&gt;
+                                &lt;td class=" text-end"&gt;1 vacuum&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                &lt;td&gt;TEMPO DE QUEIMA&lt;/td&gt;
+                                &lt;td class=" text-end"&gt;397seg&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                &lt;td&gt;IMPULSO&lt;/td&gt;
+                                &lt;td class=" text-end"&gt;981 kN &lt;span&gt;/ 220.500 lbf&lt;/span&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                       &lt;/tbody&gt;
+                   &lt;/table&gt;
+               &lt;/div&gt;
+           &lt;/div&gt;
+             &lt;div class="carousel-item container00 carrossel04" data-bs-interval="2000000"&gt;
+                &lt;div class="container" id="overViewPosition"&gt;
+                    &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                    &lt;h3 class="titleOverView"&gt;INTERESTADUAL&lt;/h3&gt;
+                    &lt;p&gt;
+                        A interestadual é uma estrutura composta que conecta o primeiro e o segundo estágios e abriga os
+                        empurradores pneumáticos que permitem que o primeiro e o segundo estágios se separem durante o
+                        vôo.
+                    &lt;/p&gt;
+                    &lt;p style="font-size: 18px;"&gt;ALETAS DE GRADE&lt;/p&gt;
+                    &lt;p&gt;
+                        O Falcon 9 está equipado com quatro aletas de grade hipersônicas posicionadas na base da
+                        interestadual. Eles orientam o foguete durante a reentrada, movendo o centro de pressão.
+                    &lt;/p&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item container00 carrossel05" data-bs-interval="3000000"&gt;
+               &lt;div class="container" id="overViewPosition"&gt;
+                    &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                    &lt;h3 class="titleOverView"&gt;CARGA ÚTIL&lt;/h3&gt;
+                    &lt;p&gt;
+                        Feita de um material composto de carbono, a carenagem protege os satélites em seu caminho para a
+                        órbita. A carenagem é lançada a aproximadamente 3 minutos em vôo, e a SpaceX continua a
+                        recuperar as carenagens para reutilização em missões futuras.
+                    &lt;/p&gt;
+                    &lt;table class="table" id="widthTable"&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;ALTURA&lt;/td&gt;
+                                &lt;td class=" text-end"&gt;13,1m &lt;span&gt;/43 ft&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;DIÂMETRO&lt;/td&gt;
+                                &lt;td class=" text-end"&gt;5,2m &lt;span&gt;/17,1 ft&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                   &lt;/table&gt;
+               &lt;/div&gt;
+          &lt;/div&gt;
+         &lt;/div&gt;
+        &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"&gt;
+            &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"&gt;
+            &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  7. Esse foi o primeiro item do carrossel, que foi uma tabela, usada para colocar os itens que temos aqui, iremos para o segundo item do carrossel
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="carousel-item container00 carrossel02" data-bs-interval="3000000"&gt;
+            &lt;div class="container" id="overViewPosition"&gt;
+                &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                &lt;h3 class="titleOverView"&gt;PRIMEIRO ESTÁGIO&lt;/h3&gt;
+                 &lt;p&gt;
+                    Falcon 9's O primeiro estágio do Falcon 9 incorpora nove motores Merlin e tanques de liga de
+                    alumínio-lítio
+                    contendo oxigênio líquido e propelente de querosene de grau de foguete (RP-1).
+                 &lt;/p&gt;
+                &lt;p&gt;
+                    O Falcon 9 gera mais de 1,7 milhão de libras de empuxo ao nível do mar.
+                &lt;/p&gt;
+           &lt;/div&gt;
+        &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  8. Terceiro item do carrossel
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="carousel-item container00 carrossel03" data-bs-interval="3000000"&gt;
+            &lt;div class="container" id="overViewPosition"&gt;
+                &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                &lt;h3 class="titleOverView"&gt;SEGUNDO ESTÁGIO&lt;/h3&gt;
+                &lt;p&gt;
+                    O segundo estágio, alimentado por um único motor a vácuo Merlin, entrega a carga útil do Falcon
+                    9 à órbita desejada. O motor do segundo estágio acende alguns segundos após a separação do
+                    estágio e pode ser reiniciado várias vezes para colocar várias cargas em diferentes órbitas.
+                &lt;/p&gt;
+                &lt;table class="table" id="widthTable"&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;NÚMERO DE MOTORES&lt;/td&gt;
+                            &lt;td class=" text-end"&gt;1 vacuum&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;TEMPO DE QUEIMA&lt;/td&gt;
+                            &lt;td class=" text-end"&gt;397seg&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;IMPULSO&lt;/td&gt;
+                            &lt;td class=" text-end"&gt;981 kN &lt;span&gt;/ 220.500 lbf&lt;/span&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                   &lt;/tbody&gt;
+               &lt;/table&gt;
+           &lt;/div&gt;
+       &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  9. Quarto item do carrossel
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="carousel-item container00 carrossel04" data-bs-interval="2000000"&gt;
+            &lt;div class="container" id="overViewPosition"&gt;
+                &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                &lt;h3 class="titleOverView"&gt;INTERESTADUAL&lt;/h3&gt;
+                 &lt;p&gt;
+                    A interestadual é uma estrutura composta que conecta o primeiro e o segundo estágios e abriga os
+                    empurradores pneumáticos que permitem que o primeiro e o segundo estágios se separem durante o
+                    vôo.
+                 &lt;/p&gt;
+                &lt;p style="font-size: 18px;"&gt;ALETAS DE GRADE&lt;/p&gt;
+                &lt;p&gt;
+                    O Falcon 9 está equipado com quatro aletas de grade hipersônicas posicionadas na base da
+                    interestadual. Eles orientam o foguete durante a reentrada, movendo o centro de pressão.
+                &lt;/p&gt;
+           &lt;/div&gt;
+        &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  10. Quinto item do carrossel
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="carousel-item container00 carrossel05" data-bs-interval="3000000"&gt;
+           &lt;div class="container" id="overViewPosition"&gt;
+                &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+                &lt;h3 class="titleOverView"&gt;CARGA ÚTIL&lt;/h3&gt;
+                &lt;p&gt;
+                    Feita de um material composto de carbono, a carenagem protege os satélites em seu caminho para a
+                    órbita. A carenagem é lançada a aproximadamente 3 minutos em vôo, e a SpaceX continua a
+                    recuperar as carenagens para reutilização em missões futuras.
+                &lt;/p&gt;
+                &lt;table class="table" id="widthTable"&gt;
+                     &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;ALTURA&lt;/td&gt;
+                            &lt;td class=" text-end"&gt;13,1m &lt;span&gt;/43 ft&lt;/span&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;DIÂMETRO&lt;/td&gt;
+                            &lt;td class=" text-end"&gt;5,2m &lt;span&gt;/17,1 ft&lt;/span&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+               &lt;/table&gt;
+           &lt;/div&gt;
+        &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  11. Agora temos o container 07, que tem outro texto
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid container00 container07"&gt;
+         &lt;div class="container" id="overViewPosition" data-aos="fade-right" data-aos-duration="1400"&gt;
+            &lt;p class="subTitleOvewView"&gt;FALCON 9&lt;/p&gt;
+            &lt;h3 class="titleOverView"&gt;MERLIN&lt;/h3&gt;
+            &lt;p&gt;
+                Merlin é uma família de motores de foguete desenvolvidos pela SpaceX para uso em seus veículos de
+                lançamento Falcon 1, Falcon 9 e Falcon Heavy. Os motores Merlin usam querosene de grau de foguete (RP-1)
+                e oxigênio líquido como propelentes de foguete em um ciclo de energia de gerador a gás. O motor Merlin
+                foi originalmente projetado para recuperação e reutilização.
+            &lt;/p&gt;
+            &lt;table class="table" id="widthTable"&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;PROPULSOR&lt;/td&gt;
+                        &lt;td class="text-end"&gt;LOX &lt;span&gt;/ RP-1&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;IMPULSO&lt;/td&gt;
+                        &lt;td class=" text-end"&gt;845 kN &lt;span&gt;/ 190.000 lbf&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+               &lt;/tbody&gt;
+           &lt;/table&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  12. Faremos agora o uso de outro carrossel, esse carrossel terá textos, marcadores abaixo do texto e dos lados também, com isso, vamos colocar a imagem diretamente no carrossel, não no background
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div id="carouselExampleCaptions" class="carousel slide carrosselSlide" data-bs-ride="carousel"&gt;
+        &lt;div class="carousel-indicators"&gt;
+            &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"&gt;&lt;/button&gt;
+            &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"&gt;&lt;/button&gt;
+            &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"&gt;&lt;/button&gt;
+            &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"&gt;&lt;/button&gt;
+            &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"&gt;&lt;/button&gt;
+            &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-inner"&gt;
+            &lt;div class="carousel-item active" data-bs-interval="1000000"&gt;
+                &lt;img src="/imagens/falcon9/09.jpg" class="d-block w-100" alt="..."&gt;
+                &lt;div class="carousel-caption d-md-block"&gt;
+                    &lt;p class="carousselText"&gt;O Falcon 9 lança o Dragon para a Estação Espacial Internacional do Complexo
+                        de
+                        Lançamento 39A&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item" data-bs-interval="2000000"&gt;
+                &lt;img src="/imagens/falcon9/10.jpg" class="d-block w-100" alt="..."&gt;
+                &lt;div class="carousel-caption d-md-block"&gt;
+                   &lt;p class="carousselText"&gt;Primeiro e segundo estágio após a separação de voo&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item" data-bs-interval="3000000"&gt;
+                &lt;img src="/imagens/falcon9/11.jpg" class="d-block w-100" alt="..."&gt;
+                &lt;div class="carousel-caption d-md-block"&gt;
+                    &lt;p class="carousselText"&gt;Falcon 9 decola com sua carga útil Iridium-5&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item" data-bs-interval="3000000"&gt;
+                &lt;img src="/imagens/falcon9/12.jpg" class="d-block w-100" alt="..."&gt;
+                &lt;div class="carousel-caption d-md-block"&gt;
+                    &lt;p class="carousselText"&gt;Falcon 9 pousando no droneship para ler as instruções&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item" data-bs-interval="3000000"&gt;
+                &lt;img src="/imagens/falcon9/13.jpg" class="d-block w-100" alt="..."&gt;
+                &lt;div class="carousel-caption d-md-block"&gt;
+                      &lt;p class="carousselText"&gt;Clone dos motores Merlin do Falcon 9 durante a decolagem&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel-item" data-bs-interval="3000000"&gt;
+                &lt;img src="/imagens/falcon9/14.jpg" class="d-block w-100" alt="..."&gt;
+                &lt;div class="carousel-caption d-md-block"&gt;
+                    &lt;p class="carousselText"&gt;O falcon 9 deixa um rastro de luz ao decolar da Base Aérea de Vandenberg
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"&gt;
+            &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"&gt;
+            &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  13. Teremos aqui, antes do footer, um espaço para ter esse download desc, que terá o “complemento” do que temos aqui no footer
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;div class="container-fluid text-center downloadDesc"&gt;
+        &lt;p data-aos="fade-right" data-aos-duration="1200"&gt;&lt;span&gt;Para mais informações sobre os serviçoes entre em
+                contato
+                com&lt;/span&gt; &lt;a href="https://www.instagram.com/onebitcode/" target="blank"&gt;<a class="__cf_email__" data-cfemail="d6b9b8b3b4bfa2b5b9b2b396b1bbb7bfbaf8b5b9bb" href="/cdn-cgi/l/email-protection">[email protected]</a>&lt;/a&gt;&lt;/p&gt;
+
+
+        &lt;button type="button" class="btn btn-outline-light p-3" data-aos="flip-left" data-aos-duration="1000"&gt;BAIXAR
+            GUIA DO USUÁRIO&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline-light p-3" data-aos="flip-up" data-aos-duration="1300"&gt;CAPACIDADES
+            E
+            SERVIÇOS&lt;/button&gt;
+    &lt;/div&gt;</code></pre>
+ </div>
+</article>

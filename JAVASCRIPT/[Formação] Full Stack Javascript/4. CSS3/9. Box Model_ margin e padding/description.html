@@ -1,0 +1,62 @@
+<article>
+ <div class="article-paragraph">
+  Crie o arquivo HTML inicial:
+ </div>
+ <textarea cols="80" readonly="" rows="10">
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="style.css" rel="stylesheet"/>
+  <title>Box Model: Margem e Preenchimento</title>
+</head>
+<body>
+		<h1>Box Model: Margem e Preenchimento</h1>
+
+    <div class="box box1">
+      <p>Exemplo de caixa com margem e preenchimento.</p>
+    </div>
+
+    <div class="box box2">
+      <p>Outra caixa com margem e preenchimento.</p>
+    </div>
+</body>
+</html></textarea>
+ <div class="article-paragraph">
+  Adicione o arquivo CSS:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.box {
+	background-color: #f64348;
+	border: 2px solid #1c1a1d;
+}
+
+.box {
+	/* margem */
+  margin-top: 30px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+
+	/* preenchimento */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Adicione o uso da propriedade box-sizing:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">.box1 {
+  box-sizing: content-box;
+}
+
+.box2 {
+  box-sizing: border-box;
+}</code></pre>
+ </div>
+</article>

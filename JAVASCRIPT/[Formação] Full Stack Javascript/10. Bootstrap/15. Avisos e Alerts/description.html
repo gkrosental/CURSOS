@@ -1,0 +1,59 @@
+<article>
+ <div class="article-paragraph">
+  1. Os alerts/avisos estão nessa parte da documentação:
+  <a href="https://bootstrapdoconebitcode.netlify.app/pages/8avisos&amp;alerts">
+   https://bootstrapdoconebitcode.netlify.app/pages/8avisos&amp;alerts
+  </a>
+  eles são usados em momentos mais interativos da página, quando você quer que apareça um sucesso ou um erro em certas interações do usuário
+ </div>
+ <div class="article-paragraph">
+  2. O primeiro tipo de alert são esses padrão, que com ele você apenas vai fazer a exibição de uma mensagem, que pode acontecer depois de você clicar em algum lugar, para enviar um formulário, por exemplo.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">
+    &lt;div class="alert alert-primary"&gt;
+        A simple primary alert—check it out!
+    &lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="article-paragraph">
+  3. Logo abaixo temos um alert com botão, que esse já está configurado com o javascript da página, que fizemos a instalação no começo do módulo. Com ele, você clica em um botão e vai aparecer a mensagem.
+ </div>
+ <div class="article-paragraph">
+  Nesse código aqui temos o elemento html e o elemento JavaScript, que você vai entender com detalhes mais a frente.
+ </div>
+ <div class="article-paragraph">
+  4. Temos também os alerts com ícones, a diferença deles são os ícones, que deixam eles mais bonitinhos, dependendo da sua aplicação você vai decidir usar ou não.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">    
+    &lt;svg xmlns="http://www.w3.org/2000/svg" style="display:none"&gt;
+        &lt;symbol id="check-circle-fill" fill="currentColor" viewbox="0 0 16 16"&gt;
+            &lt;path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"&gt;&lt;/path&gt;
+        &lt;/symbol&gt;
+        &lt;symbol id="info-fill" fill="currentColor" viewbox="0 0 16 16"&gt;
+            &lt;path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"&gt;&lt;/path&gt;
+        &lt;/symbol&gt;
+        &lt;symbol id="exclamation-triangle-fill" fill="currentColor" viewbox="0 0 16 16"&gt;
+            &lt;path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"&gt;&lt;/path&gt;
+        &lt;/symbol&gt;
+    &lt;/svg&gt;
+                  
+    &lt;div class="alert alert-primary d-flex align-items-center"&gt;
+        &lt;svg class="bi flex-shrink-0 me-2" width="24" height="24"&gt;&lt;use&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;div&gt;
+            An example alert with an icon
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  5. Por último temos um alert que já está configurado para ficar o tempo todo na tela, dessa forma, ele vai sumir quando você clicar no X, isso é útil para colocar como mensagem em uma tela que o usuário vá entrar.
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">
+    &lt;div class="alert alert-warning alert-dismissible fade show"&gt;
+        &lt;strong&gt;Holy guacamole!&lt;/strong&gt; You should check in on some of those fields below.
+        &lt;button type="button" class="btn-close" data-bs-dismiss="alert"&gt;&lt;/button&gt;
+    &lt;/div&gt;</code></pre>
+ </div>
+</article>

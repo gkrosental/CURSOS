@@ -1,0 +1,143 @@
+<article>
+ <div class="article-paragraph">
+  Crie uma nova pasta “imagens” com um arquivo chamado “index.html” com o seguinte conteúdo:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Lista de Leitura&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+		&lt;h1&gt;Lista de Leitura&lt;/h1&gt;
+
+    &lt;h2&gt;Saga Senhor dos Anéis (J.R.R. Tolkien)&lt;/h2&gt;
+    &lt;h3&gt;O Senhor dos Anéis: A Sociedade do Anel&lt;/h3&gt;
+    &lt;p&gt;Sinopse: A jornada épica começa com Frodo Bolseiro, um hobbit que deve destruir um poderoso anel que pode destruir a Terra Média se cair nas mãos do mal. Ele forma a Sociedade do Anel, composta por diversos povos, e embarca em uma perigosa jornada para Mordor.&lt;/p&gt;
+    &lt;h3&gt;O Senhor dos Anéis: As Duas Torres&lt;/h3&gt;
+    &lt;p&gt;Sinopse: A Sociedade do Anel é dividida após uma grande batalha. Enquanto Frodo e seu fiel companheiro Sam continuam a jornada para Mordor, os outros membros enfrentam desafios para proteger a Terra Média da crescente ameaça do Senhor do Escuro, Sauron.&lt;/p&gt;
+    &lt;h3&gt;O Senhor dos Anéis: O Retorno do Rei&lt;/h3&gt;
+    &lt;p&gt;Sinopse: A batalha final se aproxima enquanto Frodo se esforça para destruir o Anel em Mordor. Enquanto isso, as forças do bem lutam contra as forças do mal em uma guerra decisiva pela Terra Média.&lt;/p&gt;
+
+    &lt;h2&gt;Trilogia O Herdeiro do Império (Timothy Zahn)&lt;/h2&gt;
+    &lt;h3&gt;O Herdeiro do Império&lt;/h3&gt;
+    &lt;p&gt;Sinopse: Cinco anos após a Batalha de Endor, a Aliança Rebelde enfrenta uma nova ameaça: o Grande Almirante Thrawn, que lidera o remanescente do Império Galáctico. Luke Skywalker, Leia Organa e Han Solo devem unir forças novamente para enfrentar esse formidável adversário.&lt;/p&gt;
+    &lt;h3&gt;Ascensão da Força Sombria&lt;/h3&gt;
+    &lt;p&gt;Sinopse: Thrawn continua sua campanha para restaurar o poder do Império, trazendo à tona um antigo e mortal inimigo Jedi. Luke, Leia e Han enfrentam desafios pessoais e bélicos enquanto buscam deter a ameaça crescente.&lt;/p&gt;
+    &lt;h3&gt;O Último Comando&lt;/h3&gt;
+    &lt;p&gt;Sinopse: A ameaça final de Thrawn se aproxima, e a Aliança Rebelde deve enfrentar a batalha final para determinar o destino da galáxia. Os laços entre heróis e vilões são testados, e uma nova era se inicia para a galáxia.&lt;/p&gt;
+
+    &lt;h2&gt;Saga Percy Jackson e os Olimpianos (Rick Riordan)&lt;/h2&gt;
+    &lt;h3&gt;O Ladrão de Raios&lt;/h3&gt;
+    &lt;p&gt;Sinopse: Percy Jackson descobre que é um semideus, filho de Poseidon, e embarca em uma missão para recuperar o raio de Zeus, roubado e acusado injustamente de ser o ladrão. Ele precisa provar sua inocência enquanto enfrenta desafios dos deuses do Olimpo.&lt;/p&gt;
+    &lt;h3&gt;O Mar de Monstros&lt;/h3&gt;
+    &lt;p&gt;Sinopse: Percy e seus amigos embarcam em uma aventura perigosa para encontrar o Velocino de Ouro, que pode curar a árvore de Thalia, protegendo o Acampamento Meio-Sangue. Enfrentando criaturas mitológicas e desafios épicos, eles descobrem segredos surpreendentes.&lt;/p&gt;
+    &lt;h3&gt;A Maldição do Titã&lt;/h3&gt;
+    &lt;p&gt;Sinopse: Percy se une a novos aliados para enfrentar a maldição do titã Atlas e impedir que ele se liberte do Tártaro. Nesta aventura emocionante, o destino dos deuses e da humanidade está em jogo.&lt;/p&gt;
+    &lt;h3&gt;A Batalha do Labirinto&lt;/h3&gt;
+    &lt;p&gt;Sinopse: Percy e seus amigos exploram um perigoso labirinto que se encontra no centro do Acampamento Meio-Sangue. Eles enfrentam monstros temíveis e desvendam segredos que podem abalar o mundo dos deuses.&lt;/p&gt;
+    &lt;h3&gt;O Último Olimpiano&lt;/h3&gt;
+    &lt;p&gt;Sinopse: A profecia se concretiza, e a batalha final entre os deuses olimpianos e os titãs se aproxima. Percy lidera seus amigos na defesa do Monte Olimpo contra a invasão das forças do mal, decidindo o destino dos deuses e dos mortais.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Podemos incluir imagens localmente, colocando os arquivos na mesma pasta que o arquivo HTML, ou imagens da internet, através da sua URL. Inclua as imagens utilizando a tag &lt;img&gt; e o atributo “src”:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Lista de Leitura&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+		&lt;h1&gt;Lista de Leitura&lt;/h1&gt;
+
+    &lt;h2&gt;Saga Senhor dos Anéis (J.R.R. Tolkien)&lt;/h2&gt;
+    &lt;h3&gt;O Senhor dos Anéis: A Sociedade do Anel&lt;/h3&gt;
+		&lt;img src="capas/a-sociedade-do-anel.webp" alt="Capa do livro" height="100"&gt;
+    &lt;p&gt;Sinopse: A jornada épica começa com Frodo Bolseiro, um hobbit que deve destruir um poderoso anel que pode destruir a Terra Média se cair nas mãos do mal. Ele forma a Sociedade do Anel, composta por diversos povos, e embarca em uma perigosa jornada para Mordor.&lt;/p&gt;
+    &lt;h3&gt;O Senhor dos Anéis: As Duas Torres&lt;/h3&gt;
+		&lt;img src="capas/as-duas-torres.jpg" alt="Capa do livro" width="50"&gt;
+    &lt;p&gt;Sinopse: A Sociedade do Anel é dividida após uma grande batalha. Enquanto Frodo e seu fiel companheiro Sam continuam a jornada para Mordor, os outros membros enfrentam desafios para proteger a Terra Média da crescente ameaça do Senhor do Escuro, Sauron.&lt;/p&gt;
+    &lt;h3&gt;O Senhor dos Anéis: O Retorno do Rei&lt;/h3&gt;
+		&lt;img src="capas/o-retorno-do-rei.png" alt="Capa do livro" height="100" width="61"&gt;
+    &lt;p&gt;Sinopse: A batalha final se aproxima enquanto Frodo se esforça para destruir o Anel em Mordor. Enquanto isso, as forças do bem lutam contra as forças do mal em uma guerra decisiva pela Terra Média.&lt;/p&gt;
+
+...</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Imagens:
+ </div>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/7sdRZv8qBftYaWQyp3eHDa5TGzzU8hXSXN16yh6X.webp"/>
+ </figure>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/xMYJG4Iip3LBjeLEVjgQRtUppH3WZ8GgW9FVHPqa.jpg"/>
+ </figure>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/Li76xJuboh01z3Py31IsfSxxrZzoVhQJBUE0Mt5x.png"/>
+ </figure>
+ <div class="article-paragraph">
+  Inclua as imagens da internet:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">...
+
+    &lt;h2&gt;Trilogia O Herdeiro do Império (Timothy Zahn)&lt;/h2&gt;
+    &lt;h3&gt;O Herdeiro do Império&lt;/h3&gt;
+		&lt;img src="https://4.bp.blogspot.com/_hzu5aCzoubQ/S4agh6N48TI/AAAAAAAAHL0/NYEHkbIvOA0/w276-h400/heir+to+the+empire+cover.jpg"&gt;
+    &lt;p&gt;Sinopse: Cinco anos após a Batalha de Endor, a Aliança Rebelde enfrenta uma nova ameaça: o Grande Almirante Thrawn, que lidera o remanescente do Império Galáctico. Luke Skywalker, Leia Organa e Han Solo devem unir forças novamente para enfrentar esse formidável adversário.&lt;/p&gt;
+    &lt;h3&gt;Ascensão da Força Sombria&lt;/h3&gt;
+		&lt;img src="https://2.bp.blogspot.com/-CoxJhnktdhM/Trxk2TwS1_I/AAAAAAAAAFc/v95cGqaITZ0/w1200-h630-p-k-no-nu/200px-DarkForce_Rising.jpg"&gt;
+    &lt;p&gt;Sinopse: Thrawn continua sua campanha para restaurar o poder do Império, trazendo à tona um antigo e mortal inimigo Jedi. Luke, Leia e Han enfrentam desafios pessoais e bélicos enquanto buscam deter a ameaça crescente.&lt;/p&gt;
+    &lt;h3&gt;O Último Comando&lt;/h3&gt;
+		&lt;img src="https://i.pinimg.com/474x/ba/60/b2/ba60b2889d1cabf155b77efc25aa5e56.jpg"&gt;
+    &lt;p&gt;Sinopse: A ameaça final de Thrawn se aproxima, e a Aliança Rebelde deve enfrentar a batalha final para determinar o destino da galáxia. Os laços entre heróis e vilões são testados, e uma nova era se inicia para a galáxia.&lt;/p&gt;
+
+...</code></pre>
+ </div>
+ <div class="article-paragraph">
+  Agora é com você. Inclua as imagens abaixo nos livros restantes:
+ </div>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/B5COvb0LJLreMBsNiPiaub4oIiru3y6TvqIjwus9.jpg"/>
+ </figure>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/GzSMsPFDgq42x3uE3JRnvrLKiwvtueRb5GSX4LpF.jpg"/>
+ </figure>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/FTRurjDyoXwQrPNs8m8yxz6N5n9ywLwzX1udhzZd.jpg"/>
+ </figure>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/5xPij0PysaelCOjSh0t1PgNztclaWpr8PjLbc3Fo.jpg"/>
+ </figure>
+ <figure class="article-image">
+  <img src="https://cdn.areademembros.com/files/instancia_1851/editor/Ic9iw1PkaHHR2injDOemAIvcp3TF5cKxJA7Utfv5.jpg"/>
+ </figure>
+ <div class="article-paragraph">
+  Agora é com você. Inclua as imagens abaixo nos livros restantes:
+ </div>
+ <div class="article-code">
+  <pre><code class="language-html">...
+
+    &lt;h2&gt;Saga Percy Jackson e os Olimpianos (Rick Riordan)&lt;/h2&gt;
+    &lt;h3&gt;O Ladrão de Raios&lt;/h3&gt;
+		&lt;img src="capas/o-ladrao-de-raios.jpg"&gt;
+    &lt;p&gt;Sinopse: Percy Jackson descobre que é um semideus, filho de Poseidon, e embarca em uma missão para recuperar o raio de Zeus, roubado e acusado injustamente de ser o ladrão. Ele precisa provar sua inocência enquanto enfrenta desafios dos deuses do Olimpo.&lt;/p&gt;
+    &lt;h3&gt;O Mar de Monstros&lt;/h3&gt;
+		&lt;img src="capas/o-mar-de-monstros.jpg"&gt;
+    &lt;p&gt;Sinopse: Percy e seus amigos embarcam em uma aventura perigosa para encontrar o Velocino de Ouro, que pode curar a árvore de Thalia, protegendo o Acampamento Meio-Sangue. Enfrentando criaturas mitológicas e desafios épicos, eles descobrem segredos surpreendentes.&lt;/p&gt;
+    &lt;h3&gt;A Maldição do Titã&lt;/h3&gt;
+		&lt;img src="capas/a-maldicao-do-tita.jpg"&gt;
+    &lt;p&gt;Sinopse: Percy se une a novos aliados para enfrentar a maldição do titã Atlas e impedir que ele se liberte do Tártaro. Nesta aventura emocionante, o destino dos deuses e da humanidade está em jogo.&lt;/p&gt;
+    &lt;h3&gt;A Batalha do Labirinto&lt;/h3&gt;
+		&lt;img src="capas/a-batalha-do-labirinto.jpg"&gt;
+    &lt;p&gt;Sinopse: Percy e seus amigos exploram um perigoso labirinto que se encontra no centro do Acampamento Meio-Sangue. Eles enfrentam monstros temíveis e desvendam segredos que podem abalar o mundo dos deuses.&lt;/p&gt;
+    &lt;h3&gt;O Último Olimpiano&lt;/h3&gt;
+		&lt;img src="capas/o-ultimo-olimpiano.jpg"&gt;
+    &lt;p&gt;Sinopse: A profecia se concretiza, e a batalha final entre os deuses olimpianos e os titãs se aproxima. Percy lidera seus amigos na defesa do Monte Olimpo contra a invasão das forças do mal, decidindo o destino dos deuses e dos mortais.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+ </div>
+</article>
