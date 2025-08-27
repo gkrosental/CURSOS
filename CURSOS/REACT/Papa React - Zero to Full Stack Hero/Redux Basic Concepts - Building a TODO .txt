@@ -1,2 +1,0 @@
-TODO App Source Code (without CSS)
-https://github.com/Pedro-Goncal/todo-redux-class 
