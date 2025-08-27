@@ -52,35 +52,53 @@
 Curso completo de SQL para análise de dados, com foco em aplicações práticas, manipulação de bancos de dados, queries avançadas, integração com AWS S3 e Athena, e projeto final com portfólio Kaggle. Inclui videoaulas, notebooks, materiais de apoio e exercícios práticos.
 
 **Conteúdo:**
-- Fundamentos de SQL e bancos de dados
-- Consultas, filtragem, agregações e múltiplas tabelas
-- Integração com AWS S3 e Athena
-- Projeto prático e portfólio Kaggle
 
 **Formato:**
-- Notebooks (Jupyter/IPYNB)
-- PDFs e HTMLs de apoio
-- Exercícios práticos
 
 **Local:** `CURSOS/SQL/EBAC/Programação/SQL para análise de dados/`
 
 </details>
 
----
 
 ### �🚀 **Roadmap de Expansão**
+
+---
+
+### 🆕 **Novo Curso Adicionado!**
+
+### 🟦 REACT & React Native
+<details>
+<summary><strong>Expandir detalhes dos cursos</strong></summary>
+
+#### 📘 Papa React - Zero to Full Stack Hero
+Curso completo com projetos práticos, incluindo:
+- 2D Game Breakout em React
+- Drag and Drop com TypeScript
+- App de Video Bookmark com useRef
+- Introdução a CSS, Math em JS, Redux, Node.js e mais
+
+**Local:** `CURSOS/REACT/Papa React - Zero to Full Stack Hero/`
+
+#### 📱 [Especialização] Mobile com React Native
+Treinamento completo em React Native, com:
+- Fundamentos e recursos do React Native
+- Projeto BombGame
+- Projeto Final: Market Place
+- Projeto OnebitLife
+
+**Local:** `CURSOS/REACT/[Especialização] Mobile com React Native 📱/`
+
+</details>
+
+---
+
+### � Roadmap de Expansão
 
 <table>
 <tr>
 <td align="center" width="200">
 
-**🐍 Python**  
-*Em Breve*
-
 </td>
-<td align="center" width="200">
-
-**🌐 JavaScript**  
 *Planejado*
 
 </td>
