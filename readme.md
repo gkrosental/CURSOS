@@ -2,126 +2,74 @@
 
 <div align="center">
 
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#4ECDC4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#45B7D1;stop-opacity:1" />
-    </linearGradient>
-    
-    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
-    </linearGradient>
-    
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#00000020"/>
-    </filter>
-  </defs>
-  
-  <!-- Background -->
-  <rect width="800" height="600" fill="#f0f2f5"/>
-  
-  <!-- Header -->
-  <rect x="0" y="0" width="800" height="80" fill="url(#headerGradient)"/>
-  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
-    📚 CURSOS - Repositório Educacional
-  </text>
-  <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white" opacity="0.9">
-    Materiais de Cursos de Programação e Tecnologia
-  </text>
-  
-  <!-- Java Course Card -->
-  <rect x="50" y="120" width="700" height="180" rx="15" fill="url(#cardGradient)" filter="url(#shadow)"/>
-  <rect x="50" y="120" width="700" height="40" rx="15" fill="#ED8936"/>
-  <rect x="50" y="160" width="700" height="140" rx="0 0 15 15" fill="url(#cardGradient)"/>
-  
-  <!-- Java Icon -->
-  <circle cx="100" cy="140" r="15" fill="white"/>
-  <text x="100" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ED8936">☕</text>
-  
-  <text x="130" y="145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
-    Java COMPLETO - Programação Orientada a Objetos
-  </text>
-  
-  <!-- Course Details -->
-  <text x="70" y="190" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2D3748">
-    📖 Instrutor: Prof. Nélio Alves
-  </text>
-  <text x="70" y="210" font-family="Arial, sans-serif" font-size="12" fill="#4A5568">
-    ✨ Curso completo de Java desde fundamentos até tópicos avançados
-  </text>
-  
-  <!-- Modules List -->
-  <text x="70" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2D3748">
-    📋 Módulos Inclusos:
-  </text>
-  
-  <!-- Column 1 -->
-  <text x="90" y="250" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Introdução e Conceitos</text>
-  <text x="90" y="262" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Estruturas de Controle</text>
-  <text x="90" y="274" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Programação Orientada a Objetos</text>
-  <text x="90" y="286" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Construtores e Encapsulamento</text>
-  
-  <!-- Column 2 -->
-  <text x="300" y="250" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Arrays, Listas e Memória</text>
-  <text x="300" y="262" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Data/Hora e Git/GitHub</text>
-  <text x="300" y="274" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Enumerações e Composição</text>
-  <text x="300" y="286" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Herança e Polimorfismo</text>
-  
-  <!-- Column 3 -->
-  <text x="500" y="250" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Tratamento de Exceções</text>
-  <text x="500" y="262" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Projeto Sistema de Xadrez</text>
-  <text x="500" y="274" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Arquivos e Interfaces</text>
-  <text x="500" y="286" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">• Spring Boot e MongoDB</text>
-  
-  <!-- Stats -->
-  <rect x="600" y="180" width="130" height="80" rx="8" fill="#E2E8F0"/>
-  <text x="665" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2D3748">
-    📊 Estatísticas
-  </text>
-  <text x="665" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4A5568">
-    26 Seções
-  </text>
-  <text x="665" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4A5568">
-    178+ Arquivos
-  </text>
-  <text x="665" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4A5568">
-    PDFs + HTML
-  </text>
-  
-  <!-- Future Courses Section -->
-  <rect x="50" y="330" width="700" height="120" rx="15" fill="url(#cardGradient)" filter="url(#shadow)"/>
-  <rect x="50" y="330" width="700" height="40" rx="15" fill="#4299E1"/>
-  <rect x="50" y="370" width="700" height="80" rx="0 0 15 15" fill="url(#cardGradient)"/>
-  
-  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
-    🚀 Próximos Cursos
-  </text>
-  
-  <text x="70" y="395" font-family="Arial, sans-serif" font-size="12" fill="#4A5568">
-    🔄 Este repositório está em constante expansão! Novos cursos serão adicionados regularmente.
-  </text>
-  <text x="70" y="415" font-family="Arial, sans-serif" font-size="12" fill="#4A5568">
-    📝 Áreas planejadas: Python, JavaScript, React, Node.js, Banco de Dados, DevOps e muito mais!
-  </text>
-  <text x="70" y="435" font-family="Arial, sans-serif" font-size="12" fill="#4A5568">
-    ⭐ Acompanhe as atualizações e contribuições para este repositório educacional.
-  </text>
-  
-  <!-- Footer -->
-  <rect x="0" y="520" width="800" height="80" fill="#2D3748"/>
-  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
-    💻 Desenvolvido para a Comunidade de Desenvolvedores
-  </text>
-  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">
-    📂 Organizado • 📚 Educacional • 🌱 Em Crescimento
-  </text>
-  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#718096">
-    Última atualização: Agosto 2025
-  </text>
-</svg>
+![CURSOS Banner](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=FF6B6B&background=00000000&center=true&vCenter=true&width=800&height=80&lines=📚+CURSOS+-+Repositório+Educacional;Materiais+de+Programação+e+Tecnologia;Transformando+Conhecimento+em+Código!)
+
+<table>
+<tr>
+<td align="center" width="400">
+
+### 🟠 **Java COMPLETO**
+#### **Programação Orientada a Objetos**
+**�‍🏫 Instrutor:** Prof. Nélio Alves
+
+---
+
+**📚 26 Seções Completas**  
+**📄 178+ Arquivos**  
+**🎯 Do Básico ao Avançado**
+
+</td>
+<td align="center" width="400">
+
+### 📋 **Módulos Principais**
+
+| **Fundamentos** | **Avançado** | **Projetos** |
+|:---:|:---:|:---:|
+| 🔤 Sintaxe Básica | 🧬 Herança | ♟️ Sistema Xadrez |
+| 🔄 Estruturas | 🎭 Polimorfismo | 🌐 Spring Boot |
+| 📦 Arrays/Listas | ⚡ Exceções | 🍃 MongoDB |
+| 🏗️ POO | 📁 Arquivos | ☕ JavaFX |
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🚀 **Roadmap de Expansão**
+
+<table>
+<tr>
+<td align="center" width="200">
+
+**🐍 Python**  
+*Em Breve*
+
+</td>
+<td align="center" width="200">
+
+**🌐 JavaScript**  
+*Planejado*
+
+</td>
+<td align="center" width="200">
+
+**⚛️ React**  
+*Futuro*
+
+</td>
+<td align="center" width="200">
+
+**🚀 Node.js**  
+*Pipeline*
+
+</td>
+</tr>
+</table>
+
+---
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=2000&pause=1000&color=4ECDC4&background=00000000&center=true&vCenter=true&width=800&height=50&lines=💻+Desenvolvido+para+a+Comunidade+de+Desenvolvedores;📂+Organizado+•+📚+Educacional+•+🌱+Em+Crescimento;⚡+Transformando+conhecimento+em+código%2C+código+em+soluções!)](https://github.com/gkrosental/CURSOS)
 
 </div>
 
