@@ -125,8 +125,8 @@ Treinamento completo em React Native, com:
 
 ---
 
-## 📋 Estrutura do Repositório
 
+## 📋 Estrutura do Repositório
 
 ### 🟠 Java COMPLETO - Programação Orientada a Objetos
 **Instrutor:** Prof. Nélio Alves
@@ -142,20 +142,49 @@ Treinamento completo em React Native, com:
 
 ---
 
+### 🟡 JavaScript - Formação Full Stack
+**Instrutor:** Diversos
+
+#### 📚 Conteúdo Disponível:
+- **Módulos:**
+	- Fundamentos de JavaScript
+	- Estruturas, Funções, Arrays, Objetos
+	- Promises, Assincronicidade, Módulos
+	- TypeScript, Node.js, APIs, Git & GitHub
+	- CSS Moderno, Sass, Webpack
+	- Projetos práticos e exercícios
+
+**Local:** `JAVASCRIPT/[Formação] Full Stack Javascript/`
+
+---
+
+### 🟦 REACT & React Native
+**Instrutor:** Diversos
+
+#### 📚 Conteúdo Disponível:
+- **Papa React - Zero to Full Stack Hero:**
+	- Projetos práticos: Breakout, Drag and Drop, Redux, useRef, etc.
+- **[Especialização] Mobile com React Native:**
+	- Fundamentos, Projeto BombGame, Market Place, OnebitLife
+
+**Local:** `REACT/`
+
+---
+
 ### 🟢 SQL para Análise de Dados (EBAC)
 **Instrutor:** EBAC
 
-#### � Conteúdo Disponível:
+#### 📚 Conteúdo Disponível:
 - **01-02**: Início da Jornada e Fundamentos de SQL
 - **03-07**: Consultas, Seleção, Filtragem e Múltiplas Tabelas
 - **08-10**: Técnicas Avançadas, Projeto Kaggle e Encerramento
 
-#### �📁 Tipos de Arquivos:
-- � **Notebooks (IPYNB)**: Exercícios e projetos práticos
-- �📖 **PDFs**: Materiais teóricos e guias
+#### � Tipos de Arquivos:
+- 📓 **Notebooks (IPYNB)**: Exercícios e projetos práticos
+- � **PDFs**: Materiais teóricos e guias
 - 🌐 **HTML**: Recursos e descrições de módulos
 
-**Local:** `CURSOS/SQL/EBAC/Programação/SQL para análise de dados/`
+**Local:** `SQL/EBAC/`
 
 ---
 
