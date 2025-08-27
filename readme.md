@@ -29,6 +29,7 @@
 | 🔄 Estruturas | 🎭 Polimorfismo | 🌐 Spring Boot |
 | 📦 Arrays/Listas | ⚡ Exceções | 🍃 MongoDB |
 | 🏗️ POO | 📁 Arquivos | ☕ JavaFX |
+| 🗄️ SQL Básico | 📊 Análise de Dados | 🏆 Projeto Kaggle |
 
 </td>
 </tr>
@@ -36,7 +37,38 @@
 
 ---
 
-### 🚀 **Roadmap de Expansão**
+
+---
+
+## 🆕 **Novo Curso Adicionado!**
+
+### � SQL para Análise de Dados (EBAC)
+<details>
+<summary><strong>Expandir detalhes do curso</strong></summary>
+
+**Instrutor:** EBAC
+
+**Descrição:**
+Curso completo de SQL para análise de dados, com foco em aplicações práticas, manipulação de bancos de dados, queries avançadas, integração com AWS S3 e Athena, e projeto final com portfólio Kaggle. Inclui videoaulas, notebooks, materiais de apoio e exercícios práticos.
+
+**Conteúdo:**
+- Fundamentos de SQL e bancos de dados
+- Consultas, filtragem, agregações e múltiplas tabelas
+- Integração com AWS S3 e Athena
+- Projeto prático e portfólio Kaggle
+
+**Formato:**
+- Notebooks (Jupyter/IPYNB)
+- PDFs e HTMLs de apoio
+- Exercícios práticos
+
+**Local:** `CURSOS/SQL/EBAC/Programação/SQL para análise de dados/`
+
+</details>
+
+---
+
+### �🚀 **Roadmap de Expansão**
 
 <table>
 <tr>
@@ -77,6 +109,7 @@
 
 ## 📋 Estrutura do Repositório
 
+
 ### 🟠 Java COMPLETO - Programação Orientada a Objetos
 **Instrutor:** Prof. Nélio Alves
 
@@ -89,10 +122,22 @@
 - **21-24**: Banco de Dados e Frameworks (JDBC, JPA, Spring Boot)
 - **25-26**: Interface Gráfica e Conteúdo Bônus
 
-#### 📁 Tipos de Arquivos:
-- 📖 **PDFs**: Material teórico e exercícios
-- 🌐 **HTML**: Links e recursos complementares
-- 📝 **Exercícios**: Práticas e soluções
+---
+
+### 🟢 SQL para Análise de Dados (EBAC)
+**Instrutor:** EBAC
+
+#### � Conteúdo Disponível:
+- **01-02**: Início da Jornada e Fundamentos de SQL
+- **03-07**: Consultas, Seleção, Filtragem e Múltiplas Tabelas
+- **08-10**: Técnicas Avançadas, Projeto Kaggle e Encerramento
+
+#### �📁 Tipos de Arquivos:
+- � **Notebooks (IPYNB)**: Exercícios e projetos práticos
+- �📖 **PDFs**: Materiais teóricos e guias
+- 🌐 **HTML**: Recursos e descrições de módulos
+
+**Local:** `CURSOS/SQL/EBAC/Programação/SQL para análise de dados/`
 
 ---
 
